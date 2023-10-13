@@ -27,7 +27,8 @@
 @supports(--css: variables) {
   :root {
     @include breakpoint(md) {
-      --cd-header-height:  300px;
+      --cd-header-height: 500px;
+      @include background-image("/images/backgrounds/07.jpg");
     }
   }
 }
