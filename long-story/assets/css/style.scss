@@ -2,20 +2,6 @@
 @import '/node_modules/codyframe/main/scss/reset';
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700'); // custom font
 
-// ↓ copy & modify these templates locally
-@use 'typography';
-@use 'icons';
-@use 'buttons';
-@use 'forms';
-
-// ↓ import here the CodyHouse components
-@use 'components/_1_header' as *;
-@use 'components/_1_footer' as *;
-// ...
-
-@use '/node_modules/codyframe/main/scss/util.scss';
-// -------------------------------------------------
-
 // Responsive Vertical Timeline - by CodyHouse.co
 
 // -------------------------------------------------
@@ -54,9 +40,7 @@
   background-position: center; /* Adjust as needed */
   color: white; /* Set the text color for better visibility */
   text-align: center; /* Center the text inside the header */
-  padding: 100px; /* Adjust as needed for spacing */
-  }
-  
+  padding: 100px; /* Adjust as needed for spacing */  
 
   h1 {
     font-family: var(--font-secondary);
