@@ -10,4 +10,7 @@ Handler om ..
 # Story 3:
 Handler om ..
 
+# Long story: 
+Handler om ..
+
 ### Takk for oss! Peder, Marko og Henriette 🤙
