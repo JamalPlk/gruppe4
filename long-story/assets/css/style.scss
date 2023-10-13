@@ -35,13 +35,15 @@
   height: var(--cd-header-height);
   color: var(--color-white);
   @include fontSmooth;  
-  /** 
-  background-image: url('/long-story/assets/img/plainair.jpg'); /* Replace with the path to your background image */
-  background-size: cover; /* Adjust as needed */
-  background-position: center; /* Adjust as needed */
-  color: white; /* Set the text color for better visibility */
-  text-align: center; /* Center the text inside the header */
-  padding: 100px; /* Adjust as needed for spacing  */ 
+
+  #header-img{
+    background-image: url('/long-story/assets/img/plainair.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    color: white; /* Set the text color for better visibility */
+    text-align: center; /* Center the text inside the header */
+    padding: 100px; 
+  }
 
   h1 {
     font-family: var(--font-secondary);
