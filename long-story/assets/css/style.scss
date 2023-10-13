@@ -1,6 +1,19 @@
-@import '../../../../../codyhouse-framework/main/assets/css/style.scss'; // ⚠️ make sure to import the CodyHouse framework
+@import '/node_modules/codyframe/main/scss/config';
+@import '/node_modules/codyframe/main/scss/reset';
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700'); // custom font
 
+// ↓ copy & modify these templates locally
+@use 'typography';
+@use 'icons';
+@use 'buttons';
+@use 'forms';
+
+// ↓ import here the CodyHouse components
+@use 'components/_1_header' as *;
+@use 'components/_1_footer' as *;
+// ...
+
+@use '/node_modules/codyframe/main/scss/util.scss';
 // -------------------------------------------------
 
 // Responsive Vertical Timeline - by CodyHouse.co
@@ -28,16 +41,18 @@
   :root {
     @include breakpoint(md) {
       --cd-header-height: 500px;
-      @include background-image("https://www.pegasusart.co.uk/blog/wp-content/uploads/2019/08/Tryfan-e1567262950490.jpg");
     }
   }
 }
 
 .cd-main-header {
   height: var(--cd-header-height);
-  background: var(--cd-color-1);
   color: var(--color-white);
   @include fontSmooth;
+  background-image: url('/long-story/assets/img/plainair.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   h1 {
     font-family: var(--font-secondary);
