@@ -28,7 +28,7 @@
   :root {
     @include breakpoint(md) {
       --cd-header-height: 500px;
-      @include background-image("/images/backgrounds/07.jpg");
+      @include background-image("https://www.pegasusart.co.uk/blog/wp-content/uploads/2019/08/Tryfan-e1567262950490.jpg");
     }
   }
 }
